@@ -1,0 +1,10 @@
+set.seed(10)
+m1 <- matrix(sample(1:10, 9, replace = TRUE), nrow = 3)
+m2 <- matrix(sample(1:10, 9, replace = TRUE), nrow = 3)
+print("Matrix 1:")
+print(m1)
+print("Matrix 2:")
+print(m2)
+sum_matrix <- m1 + m2
+print("Sum of the two matrices:")
+print(sum_matrix)
