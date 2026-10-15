@@ -1,0 +1,15 @@
+marks <- c(65, 78, 82, 90, 75, 88, 78, 92, 70, 82)
+sort(marks)
+mean(marks)
+median(marks)
+frequency <- table(marks)
+frequency
+modes <- as.numeric(names(frequency[frequency == max(frequency)]))
+modes
+marks_new <- c(marks, 100)
+mean(marks_new)
+median(marks_new)
+cat("Original mean:", mean(marks), "\n")
+cat("New mean:", mean(marks_new), "\n")
+cat("Original median:", median(marks), "\n")
+cat("New median:", median(marks_new), "\n")
